@@ -6,15 +6,28 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#attribute_key"
+		},
+		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.jtml",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "entity.name.tag",
+					"match": "\\b(html|head|title|base|link|meta|style|body|article|section|nav|aside|h1|h2|h3|h4|h5|h6|hgroup|header|footer|address|p|hr|pre|blockquote|ol|ul|menu|li|dl|dt|dd|figure|figcaption|main|search|div|a|em|strong|small|s|cite|q|dfn|addr|ruby|rt|rp|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|bdi|bdo|span|br|wbr|ins|del|picture|source|img|iframe|embed|object|video|audio|track|map|area|table|caption|colgrouop|col|tbody|thread|tfoot|tr|td|th|form|label|input|button|select|datalist|optgroup|option|textarea|output|progress|meter|fieldset|legend|datails|summary|dialog|script|noscript|templete|slot|canvas|accesskey|autocapitalize)\\b"
+				}
+			]
+		},
+		"attribute_key": {
+			"patterns": [
+				{
+					"name": "entity.other.attribute-name",
+					"match": "[a-zA-Z\\-]"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.jtml",
@@ -28,5 +41,5 @@
 			]
 		}
 	},
-	"scopeName": ""
+	"scopeName": "source.jtml"
 }
