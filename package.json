@@ -1,0 +1,25 @@
+{
+  "name": "jtml-syntax-highlight",
+  "displayName": "JTML syntax highlight",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jtml",
+      "aliases": ["jtml", "jtml"],
+      "extensions": ["jtml"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jtml",
+      "scopeName": "",
+      "path": "./syntaxes/jtml.tmLanguage.json"
+    }]
+  }
+}
